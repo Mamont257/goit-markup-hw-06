@@ -252,7 +252,10 @@ body {
     url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -631,15 +634,11 @@ body {
 }
 
 
-
 .page-footer-container {
     display: flex;
     column-gap: 70px;
     justify-content:space-between;
-}
-
-.footer-social-link {
-    margin-top: 12px;
+    align-items: baseline;
 }
 
 .footer-title {
@@ -653,7 +652,6 @@ body {
 
     margin-bottom: 20px;
 }
-
 
 
 .social-list-icon-footer {
@@ -687,12 +685,6 @@ body {
 }
 
 
-
-.footer-submit {
-    margin-top: 12px;
-}
-
-
 .footer-title-mail {
     font-weight: 700;
     font-size: 14px;
@@ -719,6 +711,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
+    color: var(--global-color);
 }
 
 .footer-input:focus {
